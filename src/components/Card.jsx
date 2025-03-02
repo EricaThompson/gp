@@ -4,13 +4,13 @@ import React, { useState } from 'react'
 
 
 const Card = () => {
-  const [count, setCount] = useState(0)
+  const [heartCount, setHeartCount] = useState(0)
 
   return (
     <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <div className="reaction" onClick={() => setHeartCount((count) => count + 1)}>
+        💜 {heartCount}
+        </div>
         <p>
           ...
         </p>

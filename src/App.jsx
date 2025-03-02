@@ -3,6 +3,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Card from './components/Card'
 import Nav from './components/Nav'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -15,11 +16,9 @@ function App() {
           <img src={reactLogo} className="logo react" alt="🧶" />
         </a> */}
       </div>
-      <h1>..gp..</h1>
+      <h1>feed</h1>
       <Card />
-      <p className="read-the-docs">
-        ...
-      </p>
+      <Footer />
     </>
   )
 }
