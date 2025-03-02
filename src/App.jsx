@@ -5,6 +5,11 @@ import Footer from './components/Footer'
 
 function App() {
 
+  const data = [{userId: 1, postId:1, post:"info", user: "gemma", likes: 0, rockets: 0 },
+    {userId: 1, postId:1, post:"info", user: "gemma", likes: 0, rockets: 0 },
+    {userId: 1, postId:1, post:"info", user: "gemma", likes: 0, rockets: 0 }]
+
+
   return (
     <>
       <Nav />
