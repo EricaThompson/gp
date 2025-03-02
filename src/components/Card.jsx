@@ -3,10 +3,11 @@
 import React, { useState } from 'react'
 
 
-const Card = () => {
+const Card = ({data}) => {
   const [heartCount, setHeartCount] = useState(0)
   const [rocketCount, setRocketCount] = useState(0)
 
+  
 
   return (
     <div className="card">

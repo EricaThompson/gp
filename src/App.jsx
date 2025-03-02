@@ -2,6 +2,7 @@ import './App.css'
 import Card from './components/Card'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
+import CardHolder from './components/CardHolder'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
     <>
       <Nav />
       <h1>feed</h1>
-      <Card />
+      <CardHolder data={data} />
       <Footer />
     </>
   )
