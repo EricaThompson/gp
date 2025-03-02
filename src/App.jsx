@@ -2,18 +2,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Card from './components/Card'
+import Nav from './components/Nav'
 
 function App() {
 
   return (
     <>
+    <Nav />
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        
+        {/* <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="🧶" />
+        </a> */}
       </div>
       <h1>..gp..</h1>
       <Card />
