@@ -4,7 +4,7 @@ const Nav = () => {
   return (
     <div className='nav'>
         <a className='logo' href="https://vite.dev" target="_blank">
-            🧶 yarn
+        🧶  yarn
         </a>
     </div>
   )
