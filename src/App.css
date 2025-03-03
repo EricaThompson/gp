@@ -77,6 +77,15 @@ span {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.profile {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  border: 1px solid gray;
+  width: 200px;
+  height: 325px;
+}
+
 .feed{
   margin: 10px;
   font-size: .8em;
@@ -112,15 +121,12 @@ span {
   transition: height 300ms; */
   height: 120px;
   transition: height 0.5s ease-in-out;
-  
-
 }
 
 
 .card:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
   background-color: #747bff37;
-  
 }
 
 .topics {
@@ -180,7 +186,7 @@ span {
   bottom: 0px;
 }
 
-.card-img {
+.card-user-img {
   position: absolute;
   left: -5px;
   bottom: -15px;
@@ -188,7 +194,20 @@ span {
   border-radius: 60%;
   /* padding: 5px; */
   width: 40px;
+}
 
+.profile {
+  text-align: right;
+}
+
+.profile-user-img {
+  position: absolute;
+  right: -5px;
+  bottom: -15px;
+  /* border: 1px solid #ddd; */
+  border-radius: 60%;
+  /* padding: 5px; */
+  width: 40px;
 }
 
 .hider {
@@ -200,6 +219,7 @@ span {
 
 .hide {
   height: 18px;
+
   /* white-space: nowrap; */
 }
 
