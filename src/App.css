@@ -3,11 +3,14 @@
 }
 
 * {
-  background-color: #101010;
   color: #FFFFFF;
   border-radius: 12px;
   padding: 3px 10px;
   margin-bottom: 1rem;
+}
+
+.wrapper {
+  margin-top: 20px;
 }
 
 #root {
@@ -18,7 +21,6 @@
   padding: 2rem;
   text-align: center;
   background-color: #181818;
-  
 }
 
 /* #nav {
@@ -42,16 +44,20 @@
 }
 
 .logo {
-  font-size: 4em;
+  font-size: 7em;
   height: 6em;
   /* padding: 1.5em; */
   will-change: filter;
   transition: filter 300ms;
   font-family: "ropest";
+  /* position: sticky;
+  top: 20px; */
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -80,13 +86,13 @@
   will-change: filter;
   transition: filter 300ms;
   max-width: 400px;
+  text-align: left;
 }
 
-
-
 .card:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
   
+  filter: drop-shadow(0 0 2em #61dafbaa);
+  background-color: #747bff37;
 }
 
 .reaction {
