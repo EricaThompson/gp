@@ -7,10 +7,15 @@ const Card = ({data}) => {
   const [heartCount, setHeartCount] = useState(data.likes)
   const [rocketCount, setRocketCount] = useState(data.rockets)
   const [hide, setHide] = useState([data.hidden, "show"])
+  const [pin, setPin] = useState(data.pin)
   // let hide = false;
 
   const handleHide = () => {
     hide[0] ? setHide([false, "show"]) : setHide([true, "hide"])
+  };
+
+  const handlePin = () => {
+    pin ? setPin(false) : setPin(true)
   };
 
   const months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"]
@@ -30,7 +35,7 @@ const Card = ({data}) => {
             </span>
             <span onClick={
                   () => handlePin()}>
-                  {/* {pin ? "+" : ""} */}
+                  {pin ? "📍" : "📌"}
               </span>
         </div>
         <div className={hide[0] ? "data-hidden" : ""}>

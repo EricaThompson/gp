@@ -15,14 +15,14 @@ function App() {
     likes: 3, 
     rockets: 70,
     date: today,
-    show: false
+    show: false, pin: false
   },
     {userId: 1, postId:1, post:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt ultricies maximus. Quisque id commodo dui. Aliquam at massa vivamus" 
 , user: "gemma", likes: 20, rockets: 2, date: today,
-show: false },
+show: false, pin: false },
     {userId: 1, postId:1, post:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt ultricies maximus. Quisque id commodo dui. Aliquam at massa vivamus" 
 , user: "gemma", likes: 30, rockets: 10, date: today,
-show: false }, {
+show: false, pin: false }, {
   userId: 1, 
   postId:1, 
   post:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt ultricies maximus. Quisque id commodo dui. Aliquam at massa vivamus", 
@@ -30,14 +30,14 @@ show: false }, {
   likes: 3, 
   rockets: 70,
   date: today,
-  show: false
+  show: false, pin: false
 },
   {userId: 1, postId:1, post:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt ultricies maximus. Quisque id commodo dui. Aliquam at massa vivamus" 
 , user: "gemma", likes: 20, rockets: 2, date: today,
-show: false },
+show: false, pin: false },
   {userId: 1, postId:1, post:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt ultricies maximus. Quisque id commodo dui. Aliquam at massa vivamus" 
 , user: "gemma", likes: 30, rockets: 10, date: today,
-show: false }]
+show: false, pin: false }]
 
 // console.log("console: ", today)
 
