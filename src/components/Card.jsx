@@ -26,12 +26,9 @@ const Card = ({data}) => {
             className="reaction" 
             >
             <span onClick={
-                () => setRocketCount((count) => count + 1)}>
-                🚀 {rocketCount}
-            </span>
+                () => setRocketCount((count) => count + 1)}>🚀 {rocketCount}</span>
             <span onClick={
-                () => setHeartCount((count) => count + 1)}>
-                💜 {heartCount}
+                () => setHeartCount((count) => count + 1)}>💜 {heartCount}
             </span>
             <span onClick={
                   () => handlePin()}>
