@@ -1,15 +1,27 @@
 import './App.css'
-import Card from './components/Card'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import CardHolder from './components/CardHolder'
 
 function App() {
 
-  const data = [{userId: 1, postId:1, post:"info", user: "gemma", likes: 0, rockets: 0 },
-    {userId: 1, postId:1, post:"info", user: "gemma", likes: 0, rockets: 0 },
-    {userId: 1, postId:1, post:"info", user: "gemma", likes: 0, rockets: 0 }]
+  const today = new Date()
 
+  const data = [{
+    userId: 1, 
+    postId:1, 
+    post:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt ultricies maximus. Quisque id commodo dui. Aliquam at massa vivamus", 
+    user: "gemma", 
+    likes: 3, 
+    rockets: 70,
+    date: today
+  },
+    {userId: 1, postId:1, post:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt ultricies maximus. Quisque id commodo dui. Aliquam at massa vivamus" 
+, user: "gemma", likes: 20, rockets: 2, date: today },
+    {userId: 1, postId:1, post:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt ultricies maximus. Quisque id commodo dui. Aliquam at massa vivamus" 
+, user: "gemma", likes: 30, rockets: 10, date: today }]
+
+// console.log("console: ", today)
 
   return (
     <>

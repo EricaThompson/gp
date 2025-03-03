@@ -4,11 +4,10 @@ import React, { useState } from 'react'
 
 
 const Card = ({data}) => {
-  const [heartCount, setHeartCount] = useState(0)
-  const [rocketCount, setRocketCount] = useState(0)
-
-  
-
+  const [heartCount, setHeartCount] = useState(data.likes)
+  const [rocketCount, setRocketCount] = useState(data.rockets)
+  const months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"]
+  // console.log(data.key)
   return (
     <div className="card">
         <div 
@@ -24,8 +23,11 @@ const Card = ({data}) => {
             </span>
         </div>
         <p>
-          Something important
+          {data.post}
         </p>
+        <p>{data.user}</p>
+        <p>{months[data.date.getMonth()]} {data.date.getDate()}, {data.date.getFullYear()}</p>
+
       </div>
   )
 }

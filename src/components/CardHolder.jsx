@@ -4,11 +4,11 @@ import Card from './Card'
 const CardHolder = ({data}) => {
 
   return (
-    <div>
-        {data.map((data) => {
-            return <Card data={data} />
+    <>
+        {data.map((data, i) => {
+            return <Card data={data} key={i} />
         })}
-    </div>
+    </>
   )
 }
 
