@@ -25,8 +25,6 @@
   background-color: #181818;
 }
 
-
-
 /* #nav {
   position: absolute;
   top: 10px;
@@ -45,6 +43,11 @@
 @font-face {
   font-family: ropest;
   src:url("src/assets/font/RopestPersonalUseOnly-wrpx.ttf");
+}
+
+.click {
+  cursor: pointer;
+  user-select: none;
 }
 
 .logo {
@@ -99,8 +102,11 @@
   text-align: left;
 }
 
+.shrink {
+  height: 10px;
+}
+
 .card:hover {
-  
   filter: drop-shadow(0 0 2em #61dafbaa);
   background-color: #747bff37;
 }
@@ -112,8 +118,7 @@
   top: 10px;
   right: 10px;
   /* pointer-events: none; */
-  cursor: pointer;
-  user-select: none;
+  
   
 }
 
