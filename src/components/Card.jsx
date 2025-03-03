@@ -18,10 +18,13 @@ const Card = ({data}) => {
     pin ? setPin(false) : setPin(true)
   };
 
-  const months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"]
+  // const months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"]
   // console.log("card console: ", hide)
   return (
     <div className={"card click " + hide[1]}>
+        <div className='topics'>
+          topic: {data.topics.map(topic=>(<span className='topic'>{topic}</span>))}
+        </div>
         <div 
             className="reaction" 
             >
@@ -39,12 +42,15 @@ const Card = ({data}) => {
           <p className={"post" + hide[0] ? "post-hidden" : ""}>
             {data.post}
           </p>
+          <div >
+            <img className='card-img' src={data.img} alt="avatar" />
+          </div>
           <p className='user'>{data.user}</p>
-          <p>{months[data.date.getMonth()]} {data.date.getDate()}, {data.date.getFullYear()}</p>
+          {/* <p>{months[data.date.getMonth()]} {data.date.getDate()}, {data.date.getFullYear()}</p> */}
           <div className='hider'>
             <span onClick={
                   () => handleHide()}>
-                  {hide[0] ? "+" : "hide"}
+                  {hide[0] ? "+" : "-"}
               </span>
           </div>
         </div>
