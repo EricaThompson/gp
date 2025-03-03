@@ -33,6 +33,12 @@
   left: 15px;
   font-size: 10px;
   background: transparent;
+  
+}
+
+@font-face {
+  font-family: ropest;
+  src:url("src/assets/font/RopestPersonalUseOnly-wrpx.ttf");
 }
 
 .logo {
@@ -41,6 +47,7 @@
   /* padding: 1.5em; */
   will-change: filter;
   transition: filter 300ms;
+  font-family: "ropest";
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
