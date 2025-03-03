@@ -2,6 +2,7 @@ import './App.css'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import CardHolder from './components/CardHolder'
+import Profile from './components/profile'
 
 function App() {
 
@@ -18,7 +19,9 @@ function App() {
       rockets: 18,
       date: new Date("2025-03-01T14:45:32-05:00"),
       show: false,
-      pin: false
+      pin: false,
+      img: "src/assets/images/1.webp",
+      topics: ["string", "needle", "thread"]
     },
     {
       userId: 5,
@@ -29,7 +32,9 @@ function App() {
       rockets: 30,
       date: new Date("2025-02-28T19:12:10-05:00"),
       show: false,
-      pin: false
+      pin: false,
+      img: "src/assets/images/2.webp",
+      topics: ["string", "needle", "thread"]
     },
     {
       userId: 3,
@@ -40,7 +45,9 @@ function App() {
       rockets: 21,
       date: new Date("2025-03-02T10:30:45-05:00"),
       show: false,
-      pin: false
+      pin: false,
+      img: "src/assets/images/3.webp",
+      topics: ["string", "needle", "thread"]
     },
     {
       userId: 4,
@@ -51,7 +58,9 @@ function App() {
       rockets: 35,
       date: new Date("2025-03-03T06:55:20-05:00"),
       show: false,
-      pin: false
+      pin: false,
+      img: "src/assets/images/4.webp",
+      topics: ["thimble", "stitch", "knot"]
     },
     {
       userId: 6,
@@ -62,7 +71,9 @@ function App() {
       rockets: 14,
       date: new Date("2025-03-02T08:15:05-05:00"),
       show: false,
-      pin: false
+      pin: false,
+      img: "src/assets/images/5.webp",
+      topics: ["thimble", "stitch", "knot"]
     },
     {
       userId: 1,
@@ -73,7 +84,9 @@ function App() {
       rockets: 42,
       date: new Date("2025-03-02T23:23:55-05:00"),
       show: false,
-      pin: false
+      pin: false,
+      img: "src/assets/images/6.webp",
+      topics: ["thimble", "stitch", "knot"]
     }]
 
 // console.log("console: ", today)
@@ -81,6 +94,7 @@ function App() {
   return (
     <>
       <Nav />
+      <Profile />
       <h1 className='feed'>inbox</h1>
       <CardHolder data={data} />
       <Footer />

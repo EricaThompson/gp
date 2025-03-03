@@ -112,6 +112,7 @@ span {
   transition: height 300ms; */
   height: 120px;
   transition: height 0.5s ease-in-out;
+  
 
 }
 
@@ -120,6 +121,45 @@ span {
   filter: drop-shadow(0 0 2em #61dafbaa);
   background-color: #747bff37;
   
+}
+
+.topics {
+  position: absolute;
+  top: 2px;
+  left: -5px;
+}
+
+.topic {
+  display: inline-block;
+  background: #1e1e1e; /* Slightly lighter than the background for contrast */
+  color: #bbbbbb; /* Soft, muted text color */
+  padding: 1px 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 
+    inset 3px 3px 6px #0e0e0e,  /* Inner dark shadow */
+    inset -3px -3px 6px #262626, /* Inner light shadow */
+    4px 4px 8px rgba(0, 0, 0, 0.5), /* Outer soft shadow */
+    -4px -4px 8px rgba(255, 255, 255, 0.05); /* Subtle highlight */
+  transition: all 0.2s ease-in-out;
+}
+
+.topic:hover {
+  box-shadow: 
+    inset 2px 2px 4px #0e0e0e, 
+    inset -2px -2px 4px #262626, 
+    2px 2px 4px rgba(0, 0, 0, 0.5),
+    -2px -2px 4px rgba(255, 255, 255, 0.05);
+}
+
+.topic:active {
+  box-shadow: 
+    inset 1px 1px 2px #0e0e0e, 
+    inset -1px -1px 2px #262626;
+  transform: scale(0.98); /* Slight press effect */
 }
 
 .reaction {
@@ -136,7 +176,19 @@ span {
 }
 
 .user {
-  margin-top: 0px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.card-img {
+  position: absolute;
+  left: -5px;
+  bottom: -15px;
+  /* border: 1px solid #ddd; */
+  border-radius: 60%;
+  /* padding: 5px; */
+  width: 40px;
+
 }
 
 .hider {
