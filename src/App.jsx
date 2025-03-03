@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <Nav />
-      <h1>feed</h1>
+      <h1 className='feed'>inbox</h1>
       <CardHolder data={data} />
       <Footer />
     </>

@@ -6,6 +6,13 @@ import React, { useState } from 'react'
 const Card = ({data}) => {
   const [heartCount, setHeartCount] = useState(data.likes)
   const [rocketCount, setRocketCount] = useState(data.rockets)
+  const [hide, setHide] = useState(false)
+  // let hide = false;
+
+  const handleHide = () => {
+    hide ? hide = setHide(false) : setHide(true)
+  };
+
   const months = ["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"]
   // console.log(data.key)
   return (
@@ -27,6 +34,12 @@ const Card = ({data}) => {
         </p>
         <p>{data.user}</p>
         <p>{months[data.date.getMonth()]} {data.date.getDate()}, {data.date.getFullYear()}</p>
+        <div className='hide'>
+          <span onClick={
+                () => handleHide()}>
+                {hide ? "show" : "hide"}
+            </span>
+        </div>
 
       </div>
   )
