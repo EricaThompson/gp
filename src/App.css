@@ -45,6 +45,10 @@
   src:url("src/assets/font/RopestPersonalUseOnly-wrpx.ttf");
 }
 
+p {
+  margin: 0px;
+}
+
 .click {
   cursor: pointer;
   user-select: none;
@@ -93,22 +97,25 @@
 .card {
   padding: 2em;
   border: 1px solid rgba(38,38,38,.7);
-  background-color: #181818;
+  background-color: #141414;
   border-radius: 12px;
   position: relative;
   will-change: filter;
   transition: filter 300ms;
   max-width: 400px;
   text-align: left;
+  /* will-change: height;
+  transition: height 300ms; */
+  height: 170px;
+  transition: height 0.5s ease-in-out;
+
 }
 
-.shrink {
-  height: 10px;
-}
 
 .card:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
   background-color: #747bff37;
+  
 }
 
 .reaction {
@@ -118,15 +125,46 @@
   top: 10px;
   right: 10px;
   /* pointer-events: none; */
-  
-  
+}
+
+.post {
+  margin-bottom: 0px;
+}
+
+.user {
+  margin-top: 0px;
+}
+
+.hider {
+  margin-bottom: 0px;
+  position:absolute;
+  right: 10px;
+  bottom: 1px;
 }
 
 .hide {
-  position:absolute;
-  right: 10px;
-  bottom: 10px;
+  height: 18px;
+  /* white-space: nowrap; */
 }
+
+.data-hidden {
+  /* white-space: nowrap;    */
+  overflow: hidden;      /* Hide the text that overflows */
+  text-overflow: ellipsis;
+  /* padding-right: 25px; */
+  width: 330px;
+  height: 30px;
+  transition: height 0.5s ease-in-out;
+
+}
+
+/* .post-hidden {
+  width: 200px
+} */
+
+/* .hider-hidden {
+
+} */
 
 /* .card.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);

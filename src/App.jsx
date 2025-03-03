@@ -14,24 +14,30 @@ function App() {
     user: "gemma", 
     likes: 3, 
     rockets: 70,
-    date: today
+    date: today,
+    show: false
   },
     {userId: 1, postId:1, post:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt ultricies maximus. Quisque id commodo dui. Aliquam at massa vivamus" 
-, user: "gemma", likes: 20, rockets: 2, date: today },
+, user: "gemma", likes: 20, rockets: 2, date: today,
+show: false },
     {userId: 1, postId:1, post:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt ultricies maximus. Quisque id commodo dui. Aliquam at massa vivamus" 
-, user: "gemma", likes: 30, rockets: 10, date: today }, {
+, user: "gemma", likes: 30, rockets: 10, date: today,
+show: false }, {
   userId: 1, 
   postId:1, 
   post:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt ultricies maximus. Quisque id commodo dui. Aliquam at massa vivamus", 
   user: "gemma", 
   likes: 3, 
   rockets: 70,
-  date: today
+  date: today,
+  show: false
 },
   {userId: 1, postId:1, post:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt ultricies maximus. Quisque id commodo dui. Aliquam at massa vivamus" 
-, user: "gemma", likes: 20, rockets: 2, date: today },
+, user: "gemma", likes: 20, rockets: 2, date: today,
+show: false },
   {userId: 1, postId:1, post:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt ultricies maximus. Quisque id commodo dui. Aliquam at massa vivamus" 
-, user: "gemma", likes: 30, rockets: 10, date: today }]
+, user: "gemma", likes: 30, rockets: 10, date: today,
+show: false }]
 
 // console.log("console: ", today)
 
