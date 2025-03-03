@@ -6,11 +6,11 @@ import Profile from './components/profile'
 
 function App() {
 
-  const today = new Date()
+  // const today = new Date()
 
-  console.log(today)
+  // console.log(today)
 
-  const data = [{
+  const posts = [{
       userId: 2,
       postId: 7,
       post: "Explored a new hiking trail today! The view from the top was absolutely breathtaking. Nature never disappoints.",
@@ -89,14 +89,53 @@ function App() {
       topics: ["thimble", "stitch", "knot"]
     }]
 
+  const users = [
+    {
+      "userId": 1,
+      "username": "johndoe",
+      "displayName": "John Doe",
+      "bio": "Tech enthusiast | Coffee lover | Always learning",
+      "profileImage": "src/assets/images/1.webp",
+      "followers": 1523,
+      "following": 345,
+      "posts": 128,
+      "verified": true,
+      "joinedDate": new Date("2018-05-21T14:30:00-04:00")
+    },
+    {
+      "userId": 2,
+      "username": "sarahsmith",
+      "displayName": "Sarah Smith",
+      "bio": "Digital artist | Cat mom | Dreamer ✨",
+      "profileImage": "src/assets/images/2.webp",
+      "followers": 987,
+      "following": 210,
+      "posts": 432,
+      "verified": false,
+      "joinedDate": new Date("2009-11-10T08:15:45-06:00")
+    },
+    {
+      "userId": 3,
+      "username": "mikegamer",
+      "displayName": "Mike G",
+      "bio": "Gamer | Streamer | Esports fan 🎮",
+      "profileImage": "src/assets/images/3.webp",
+      "followers": 3050,
+      "following": 587,
+      "posts": 982,
+      "verified": true,
+      "joinedDate": ("1995-07-03T22:50:20-07:00")
+    }
+  ]
+
 // console.log("console: ", today)
 
   return (
     <>
       <Nav />
-      <Profile />
+      <Profile data={users} />
       <h1 className='feed'>inbox</h1>
-      <CardHolder data={data} />
+      <CardHolder data={posts} />
       <Footer />
     </>
   )
