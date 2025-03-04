@@ -43,7 +43,7 @@ const Card = ({data}) => {
             {data.post}
           </p>
           <div >
-            <img className='card-user-img' src={data.img} alt="avatar" />
+            <img className='card-user-img' src={`http://localhost:2819${data.img}`} alt="avatar" />
           </div>
           <p className='user'>{data.user}</p>
           {/* <p>{months[data.date.getMonth()]} {data.date.getDate()}, {data.date.getFullYear()}</p> */}

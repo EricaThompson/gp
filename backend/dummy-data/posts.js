@@ -8,7 +8,7 @@ const posts = [{
         date: new Date("2025-03-01T14:45:32-05:00"),
         show: false,
         pin: false,
-        img: "src/assets/images/1.webp",
+        img: "/images/1.webp",
         topics: ["string", "needle", "thread"]
       },
       {
@@ -21,7 +21,7 @@ const posts = [{
         date: new Date("2025-02-28T19:12:10-05:00"),
         show: false,
         pin: false,
-        img: "src/assets/images/2.webp",
+        img: "/images/2.webp",
         topics: ["string", "needle", "thread"]
       },
       {
@@ -34,7 +34,7 @@ const posts = [{
         date: new Date("2025-03-02T10:30:45-05:00"),
         show: false,
         pin: false,
-        img: "src/assets/images/3.webp",
+        img: "/images/3.webp",
         topics: ["string", "needle", "thread"]
       },
       {
@@ -47,7 +47,7 @@ const posts = [{
         date: new Date("2025-03-03T06:55:20-05:00"),
         show: false,
         pin: false,
-        img: "src/assets/images/4.webp",
+        img: "/images/4.webp",
         topics: ["thimble", "stitch", "knot"]
       },
       {
@@ -60,7 +60,7 @@ const posts = [{
         date: new Date("2025-03-02T08:15:05-05:00"),
         show: false,
         pin: false,
-        img: "src/assets/images/5.webp",
+        img: "/images/5.webp",
         topics: ["thimble", "stitch", "knot"]
       },
       {
@@ -73,7 +73,7 @@ const posts = [{
         date: new Date("2025-03-02T23:23:55-05:00"),
         show: false,
         pin: false,
-        img: "src/assets/images/6.webp",
+        img: "/images/6.webp",
         topics: ["thimble", "stitch", "knot"]
       }]
 

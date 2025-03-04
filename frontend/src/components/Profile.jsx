@@ -10,7 +10,7 @@ const Profile = ({user}) => {
             <p>{user.followers}: followers</p>
             <p>{user.bio} :bio</p>
             <p>{user.joinedDate} :since</p>
-            {/* <img className="profile-user-img" src={user.profileImage} alt="" /> */}
+            <img className="profile-user-img" src={`http://localhost:2819${user.profileImage}`} alt="user profile image" />
         </div>
     </div>
   )
