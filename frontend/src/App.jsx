@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import CardHolder from './components/CardHolder'
 import Profile from './components/profile'
 import { useEffect, useState } from 'react'
+import UserActions from './components/UserActions'
 
 function App() {
 
@@ -34,16 +35,13 @@ function App() {
       })
   }, [])
 
-  console.log('app user: ', user)
-
   return (
     <>
-      <div className="App">
+      {/* <div className="App">
         <p>{message}</p>
-      </div>
+      </div> */}
       <Nav />
       {user ? <Profile user={user} /> : "Loading..."}
-      <h1 className='feed'>inbox</h1>
       {posts ? <CardHolder data={posts} /> : "Loading..."}
       <Footer />
     </>

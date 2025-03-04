@@ -23,7 +23,7 @@ const Card = ({data}) => {
   return (
     <div className={"card click " + hide[1]}>
         <div className='topics'>
-          topic: {data.topics.map((topic, i)=>(<span key={i} className='topic'>{topic}</span>))}
+          {data.topics.map((topic, i)=>(<span key={i} className='topic'>{topic}</span>))}
         </div>
         <div 
             className="reaction" 

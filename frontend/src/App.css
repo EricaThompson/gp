@@ -25,11 +25,6 @@
   background-color: #181818;
 }
 
-/* #nav {
-  position: absolute;
-  top: 10px;
-} */
-
 .nav {
   border-radius: 12px;
   position:absolute;
@@ -61,12 +56,9 @@ span {
 .logo {
   font-size: 7em;
   height: 6em;
-  /* padding: 1.5em; */
   will-change: filter;
   transition: filter 300ms;
   font-family: "ropest";
-  /* position: sticky;
-  top: 20px; */
 }
 
 .logo:hover {
@@ -81,7 +73,7 @@ span {
   position: absolute;
   right: 10px;
   top: 50px;
-  border: 1px solid gray;
+  border: 1px solid rgba(38,38,38,.7);
   width: 200px;
   height: 325px;
 }
@@ -117,12 +109,9 @@ span {
   transition: filter 300ms;
   max-width: 400px;
   text-align: left;
-  /* will-change: height;
-  transition: height 300ms; */
   height: 120px;
   transition: height 0.5s ease-in-out;
 }
-
 
 .card:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -131,14 +120,14 @@ span {
 
 .topics {
   position: absolute;
-  top: 2px;
+  top: -16px;
   left: -5px;
 }
 
 .topic {
   display: inline-block;
-  background: #1e1e1e; /* Slightly lighter than the background for contrast */
-  color: #bbbbbb; /* Soft, muted text color */
+  background: #2a2a2a; 
+  color: #d1d1d1; 
   padding: 1px 8px;
   font-size: 16px;
   font-weight: bold;
@@ -146,10 +135,10 @@ span {
   text-align: center;
   cursor: pointer;
   box-shadow: 
-    inset 3px 3px 6px #0e0e0e,  /* Inner dark shadow */
-    inset -3px -3px 6px #262626, /* Inner light shadow */
-    4px 4px 8px rgba(0, 0, 0, 0.5), /* Outer soft shadow */
-    -4px -4px 8px rgba(255, 255, 255, 0.05); /* Subtle highlight */
+    inset 3px 3px 6px #191919, 
+    inset -3px -3px 6px #333333, 
+    4px 4px 8px rgba(0, 0, 0, 0.4), 
+    -4px -4px 8px rgba(255, 255, 255, 0.1);
   transition: all 0.2s ease-in-out;
 }
 
@@ -165,16 +154,17 @@ span {
   box-shadow: 
     inset 1px 1px 2px #0e0e0e, 
     inset -1px -1px 2px #262626;
-  transform: scale(0.98); /* Slight press effect */
+  transform: scale(0.98); 
 }
 
 .reaction {
-  /* background-color: rgb(206, 206, 206); */
   color: #747BFF;
   position:absolute;
-  top: 10px;
+  top: -16px;
   right: 10px;
-  /* pointer-events: none; */
+  border: 1px solid rgba(38,38,38,.7);
+  border-radius: 4em;
+  background-color: rgba(27, 27, 24, 0.595);
 }
 
 .post {
@@ -190,24 +180,46 @@ span {
   position: absolute;
   left: -5px;
   bottom: -15px;
-  /* border: 1px solid #ddd; */
   border-radius: 60%;
-  /* padding: 5px; */
   width: 40px;
 }
 
 .profile {
   text-align: right;
+  padding-right: 35px;
+  padding-left: 0;
 }
 
 .profile-user-img {
   position: absolute;
   right: -5px;
   bottom: -15px;
-  /* border: 1px solid #ddd; */
   border-radius: 60%;
-  /* padding: 5px; */
   width: 40px;
+}
+
+.user-actions {
+  display: flex;
+  /* flex-direction: column; */
+  position: absolute;
+  right: 280px;
+  top: 25px;
+}
+
+.each-action {
+  font-size: 1.8rem;
+  padding: 5px;
+  width: 2rem;
+  height: 2rem; 
+  line-height: 100%;
+  border-radius: 50%;
+  background: #2a2a2a; 
+  box-shadow: 
+    inset 3px 3px 6px #191919, 
+    inset -3px -3px 6px #333333, 
+    4px 4px 8px rgba(0, 0, 0, 0.4), 
+    -4px -4px 8px rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease-in-out;
 }
 
 .hider {
@@ -219,33 +231,19 @@ span {
 
 .hide {
   height: 18px;
-
-  /* white-space: nowrap; */
-}
-
-.data-hidden {
-  /* white-space: nowrap;    */
-  overflow: hidden;      /* Hide the text that overflows */
-  text-overflow: ellipsis;
-  /* padding-right: 25px; */
-  width: 330px;
-  height: 30px;
-  transition: height 0.5s ease-in-out;
-
 }
 
 /* .post-hidden {
-  width: 200px
+  margin-top: -10px;
 } */
 
-/* .hider-hidden {
-
-} */
-
-/* .card.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-} */
-
+.data-hidden {
+  overflow: hidden;      
+  text-overflow: ellipsis;
+  width: 330px;
+  height: 30px;
+  transition: height 0.5s ease-in-out;
+}
 
 .read-the-docs {
   color: #888;
