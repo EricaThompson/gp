@@ -3,11 +3,16 @@ const app = express();
 const cors = require("cors");
 // const port = 2819;
 
+const posts = require("./dummy-data/posts")
+
 app.use(cors());
 
-app.get("/api", (req, res)=>{
+app.get("/", (req, res)=>{
     res.json({message: "Okay World"})
-    res.send({note: "it's alive"})
+})
+
+app.get("/posts", (req, res)=> {
+    res.json(posts);
 })
 
 app.listen(2819)
