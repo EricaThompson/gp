@@ -3,12 +3,22 @@ import Nav from './components/Nav'
 import Footer from './components/Footer'
 import CardHolder from './components/CardHolder'
 import Profile from './components/profile'
+import { useEffect, useState } from 'react'
 
 function App() {
 
   // const today = new Date()
 
   // console.log(today)
+
+  const [message, setMessage] = useState("empty")
+
+  useEffect(()=> {
+    fetch('http://localhost:5000/api/hello')
+      .then((res)=> res.json())
+      .then((data)=> setMessage(data.message))
+  }, [])
+
 
   const posts = [{
       userId: 2,
@@ -132,6 +142,9 @@ function App() {
 
   return (
     <>
+      <div className="App">
+        <p>{message}</p>
+      </div>
       <Nav />
       <Profile data={users} />
       <h1 className='feed'>inbox</h1>
