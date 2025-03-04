@@ -1,5 +1,10 @@
 # React + Vite
 
+Made with: NVM 19, Vite 6.2.0
+Frontend `npm run dev`
+Backend `npm run devStart`
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
