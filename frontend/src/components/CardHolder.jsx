@@ -6,7 +6,7 @@ const CardHolder = ({data}) => {
   return (
     <>
         {data.map((data, i) => {
-            return <Card data={data} key={i} />
+            return <div key={i}><Card data={data} /></div>
         })}
     </>
   )
