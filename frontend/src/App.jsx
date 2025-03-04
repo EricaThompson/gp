@@ -14,9 +14,9 @@ function App() {
   const [message, setMessage] = useState("empty")
 
   useEffect(()=> {
-    fetch('http://localhost:5000/api/hello')
-      .then((res)=> res.json())
-      .then((data)=> setMessage(data.message))
+    fetch('http://localhost:2819/api')
+      .then((res)=> console.log(res))
+      // .then((data)=> setMessage(res))
   }, [])
 
 
