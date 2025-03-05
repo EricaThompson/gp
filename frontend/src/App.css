@@ -184,20 +184,6 @@ span {
   width: 40px;
 }
 
-.profile {
-  text-align: right;
-  padding-right: 35px;
-  padding-left: 0;
-}
-
-.profile-user-img {
-  position: absolute;
-  right: -5px;
-  bottom: -15px;
-  border-radius: 60%;
-  width: 40px;
-}
-
 .user-actions {
   display: flex;
   /* flex-direction: column; */
@@ -222,11 +208,61 @@ span {
   transition: all 0.2s ease-in-out;
 }
 
+.post {
+  flex-direction: column;
+  width: 400px;
+  height: 600px;
+  background-color: #747BFF;
+}
+
+textarea {
+  text
+}
+
+.closer {
+  border: 1px solid #191919;
+  background-color: #191919;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
 .hider {
   margin-bottom: 0px;
   position:absolute;
   right: 10px;
   bottom: 1px;
+}
+
+.profile {
+  text-align: right;
+  padding-right: 35px;
+  padding-left: 0;
+  position: absolute;
+  /* bottom: 2000px; */
+  /* border: 1px solid green; */
+}
+
+.profile-user-img {
+  position: absolute;
+  right: -5px;
+  bottom: -15px;
+  border-radius: 60%;
+  width: 40px;
+}
+
+.profile-hider {
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  /* border: 1px solid green; */
+  text-align: left;
+}
+
+.profile-hidden {
+  height: 45px;
+  width: 35px;
+  /* bottom: 20px; */
 }
 
 .hide {
