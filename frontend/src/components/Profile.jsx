@@ -1,17 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Profile = ({user}) => {
 
+  const [show, setShow] = useState("false")
+
+  const profileToggle =()=> {
+    show ? setShow(false) : setShow(true)
+  }
+
   console.log("profile: ", user)
   return (
-    <div className='profile'>
-        <div>
-            <p>@{user.username} | {user.displayName}</p>
-            <p>{user.followers}: followers</p>
-            <p>{user.bio} :bio</p>
-            <p>{user.joinedDate} :since</p>
+    <div className={`profile ${show ? "" : "profile-hidden"}`}>
+        {/* <div> */}
+            {show && <div>
+              <p>@{user.username} | {user.displayName}</p>
+              <p>{user.followers}</p>
+              <p>{user.bio}</p>
+              <p>{user.joinedDate}</p>
+            </div>}
             <img className="profile-user-img" src={`http://localhost:2819${user.profileImage}`} alt="user profile image" />
-        </div>
+            <p onClick={(()=> {profileToggle()})} className='profile-hider'>{show ? "-" : "+"}</p>
+        {/* </div> */}
     </div>
   )
 }
