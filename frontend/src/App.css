@@ -215,9 +215,9 @@ span {
   background-color: #747BFF;
 }
 
-/* textarea {
-  text
-} */
+.title, .textarea {
+  color: black;
+}
 
 .closer {
   border: 1px solid #191919;

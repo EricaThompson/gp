@@ -19,8 +19,8 @@ const Post = () => {
         <form>
             <p>New Post</p>
             
-            <div><label for="title">Title</label><input name="title" type="text" onChange={e => handleTitle(e)} /></div>
-            <div><label for="post">Post</label><textarea /></div>
+            <div><label for="title">Title</label><input className="title" name="title" type="text" onChange={e => handleTitle(e)} /></div>
+            <div><label for="post">Post</label><textarea className='textarea' /></div>
             <div><input type="submit" /></div>
         </form>
     </div>
