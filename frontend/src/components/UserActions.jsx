@@ -3,6 +3,7 @@ import Post from './Post'
 
 const UserActions = () => {
     const [newPost, setNewPost] = useState(false)
+    const [showActions, setShowActions] = useState(false)
 
     const actions = [{
         icon:"✍🏾",
@@ -20,10 +21,17 @@ const UserActions = () => {
         icon:"🗑",
         setNewPost
     }]
+
+    const toggleActions=()=>{
+        showActions ? setShowActions(false) : setShowActions(true)
+    }
     
     return (
         <div className='user-actions'>
-            {actions.map((action, i)=> (
+            <div onClick={()=>{toggleActions()}} className="each-action">
+                ⚙️
+            </div>
+            {showActions && actions.map((action, i)=> (
                 <div onClick={()=>action.setNewPost(true)} className="each-action" key={i}>
                     {action.icon}
                 </div>
